@@ -74,7 +74,10 @@
                    document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
       autenticaion(window.localStorage.getItem("correo"),window.localStorage.getItem("clave"));
-
+     $("#enviar_form_inicio").on("click", function(){
+            alert("Diste click en el boton enviar");
+        });
+     
      
     }
             
